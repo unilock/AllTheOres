@@ -6,7 +6,7 @@ import net.allthemods.alltheores.datagen.builder.ShapedIngotBuilder;
 import net.allthemods.alltheores.datagen.builder.ShapedRawBuilder;
 import net.allthemods.alltheores.infos.ItemTagRegistry;
 import net.allthemods.alltheores.infos.Reference;
-import net.minecraft.data.*;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;

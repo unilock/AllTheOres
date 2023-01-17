@@ -1,17 +1,11 @@
 package net.allthemods.alltheores.infos;
 
-import com.electronwill.nightconfig.core.Config;
 import net.allthemods.alltheores.AllTheOres;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.fml.config.ConfigTracker;
-import net.minecraftforge.fml.config.IConfigEvent;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
-
-import org.apache.commons.lang3.tuple.Pair;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.config.ModConfigEvent;
+import org.apache.commons.lang3.tuple.Pair;
 
 @EventBusSubscriber(modid = Reference.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class Configuration {

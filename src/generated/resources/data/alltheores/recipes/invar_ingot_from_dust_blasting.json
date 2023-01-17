@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "tag": "forge:dusts/invar"
-  },
-  "result": "alltheores:invar_ingot",
-  "experience": 0.15,
-  "cookingtime": 200
-}

@@ -4,17 +4,13 @@ import net.allthemods.alltheores.blocks.BlockList;
 import net.allthemods.alltheores.infos.ItemTagRegistry;
 import net.allthemods.alltheores.infos.Reference;
 import net.minecraft.advancements.critereon.ItemPredicate;
-import net.minecraft.data.*;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.Tags;
 
-import java.io.IOException;
-import java.nio.file.Path;
 import java.util.function.Consumer;
 
 public class ShapelessCrafting extends RecipeProvider {
@@ -68,7 +64,7 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.INVAR_DUST.get(),3)
-                .requires(Ingredient.of(ItemTagRegistry.IRON_DUST),2)
+                .requires(BlockList.IRON_DUST.get(),2)
                 .requires(ItemTagRegistry.NICKEL_DUST)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("invar_dust","alloy_blending"));
@@ -76,7 +72,7 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.STEEL_DUST.get(),1)
-                .requires(ItemTagRegistry.IRON_DUST)
+                .requires(BlockList.IRON_DUST.get(),1)
                 .requires(Items.COAL,4)
                 .requires(ItemTagRegistry.ORE_HAMMERS)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
@@ -84,21 +80,21 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.ELECTRUM_DUST.get(),2)
-                .requires(ItemTagRegistry.GOLD_DUST)
+                .requires(BlockList.GOLD_DUST.get())
                 .requires(ItemTagRegistry.SILVER_DUST)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("electrum_dust","alloy_blending"));
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.BRONZE_DUST.get(),4)
-                .requires(Ingredient.of(ItemTagRegistry.COPPER_DUST),3)
+                .requires(BlockList.COPPER_DUST.get(),3)
                 .requires(ItemTagRegistry.TIN_DUST)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("bronze_dust","alloy_blending"));
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.BRASS_DUST.get(),4)
-                .requires(Ingredient.of(ItemTagRegistry.COPPER_DUST),3)
+                .requires(BlockList.COPPER_DUST.get(),3)
                 .requires(ItemTagRegistry.ZINC_DUST)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("brass_dust","alloy_blending"));
@@ -107,20 +103,20 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
                 .shapeless(BlockList.LUMIUM_DUST.get(),4)
                 .requires(Items.GLOWSTONE_DUST,4)
                 .requires(ItemTagRegistry.SILVER_DUST)
-                .requires(Ingredient.of(ItemTagRegistry.TIN_DUST),3)
+                .requires(BlockList.TIN_DUST.get(),3)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("lumium_dust","alloy_blending"));
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.CONSTANTAN_DUST.get(),2)
-                .requires(ItemTagRegistry.COPPER_DUST)
+                .requires(BlockList.COPPER_DUST.get())
                 .requires(ItemTagRegistry.NICKEL_DUST)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("constantan_dust","alloy_blending"));
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.SIGNALUM_DUST.get(),4)
-                .requires(Ingredient.of(ItemTagRegistry.COPPER_DUST),3)
+                .requires(BlockList.COPPER_DUST.get(),3)
                 .requires(ItemTagRegistry.SILVER_DUST)
                 .requires(Items.REDSTONE,4)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
@@ -128,9 +124,9 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
 
         ShapelessRecipeBuilder
                 .shapeless(BlockList.ENDERIUM_DUST.get(),4)
-                .requires(Ingredient.of(ItemTagRegistry.LEAD_DUST),3)
+                .requires(BlockList.LEAD_DUST.get(),3)
                 .requires(ItemTagRegistry.PLATINUM_DUST)
-                .requires(Items.ENDER_PEARL,4)
+                .requires(Items.ENDER_PEARL,2)
                 .requires(ItemTagRegistry.ORE_HAMMERS)
                 .unlockedBy(hasCondition,RecipeProvider.inventoryTrigger(ItemPredicate.Builder.item().of(ItemTagRegistry.ORE_HAMMERS).build()))
                 .save(consumer,recipeDir("enderium_dust","alloy_blending"));
@@ -642,14 +638,7 @@ private ResourceLocation recipeDir(String typeIn, String typeOut) {
                 .requires(ItemTagRegistry.COPPER_BLOCK_ITEM)
                 .unlockedBy(hasCondition,RecipeProvider.has(Items.COPPER_BLOCK))
                 .save(consumer,recipeDir("copper_ingot","block"));
-
-        ShapelessRecipeBuilder
-                .shapeless(BlockList.BRASS_INGOT.get(),9)
-                .requires(ItemTagRegistry.BRASS_BLOCK_ITEM)
-                .unlockedBy(hasCondition,RecipeProvider.has(BlockList.BRASS_BLOCK_ITEM.get()))
-                .save(consumer,recipeDir("brass_ingot","block"));
-
-}
+    }
 
     public ShapelessCrafting(DataGenerator generatorIn) {
         super(generatorIn);

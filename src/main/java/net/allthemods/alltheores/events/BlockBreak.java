@@ -1,6 +1,5 @@
 package net.allthemods.alltheores.events;
 
-import net.allthemods.alltheores.AllTheOres;
 import net.allthemods.alltheores.blocks.OtherOreBlock;
 import net.allthemods.alltheores.infos.Reference;
 import net.minecraftforge.common.util.FakePlayer;
@@ -15,7 +14,6 @@ public class BlockBreak {
         if(event.getPlayer().isCreative()) { return; }
         if((event.getState().getBlock() instanceof OtherOreBlock) && ((event.getPlayer() instanceof FakePlayer) || (event.getPlayer() == null) || (event.getPlayer().getMainHandItem().isEmpty()))) {
             event.setCanceled(true);
-            return;
         }
     }
 }

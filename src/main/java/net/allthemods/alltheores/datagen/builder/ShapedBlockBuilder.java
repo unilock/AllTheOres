@@ -15,7 +15,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.EnumMap;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Consumer;
 
@@ -117,13 +116,13 @@ public class ShapedBlockBuilder {
         return builder
                 .define('h', hammer);
     }
-
     private ShapedRecipeBuilder addCriterionNugget(ShapedRecipeBuilder builder) {
         return builder
                 .define('i', nugget);
     }
+
     private ShapedRecipeBuilder block(ItemLike provider) {
-        return shaped((ItemLike) provider)
+        return shaped(provider)
             .pattern("aaa")
             .pattern("aaa")
             .pattern("aaa");
@@ -131,7 +130,7 @@ public class ShapedBlockBuilder {
     }
 
     private ShapedRecipeBuilder ingot(ItemLike provider) {
-        return shaped((ItemLike) provider)
+        return shaped(provider)
                 .pattern("aaa")
                 .pattern("aaa")
                 .pattern("aaa");
@@ -153,7 +152,7 @@ public class ShapedBlockBuilder {
 
     }
     private ShapedRecipeBuilder plate(ItemLike provider) {
-        return shaped((ItemLike) provider)
+        return shaped(provider)
                 .pattern("ha ")
                 .pattern("a  ")
                 .pattern("   ");
