@@ -14,10 +14,10 @@ import net.minecraft.world.item.Items;
 import java.util.function.Consumer;
 
 public class ShapelessCrafting extends RecipeProvider {
+    private ResourceLocation recipeDir(String typeIn, String typeOut) {
+        return new ResourceLocation(Reference.MOD_ID,typeIn + "_from_" + typeOut);
+    }
 
-private ResourceLocation recipeDir(String typeIn, String typeOut) {
-    return new ResourceLocation(Reference.MOD_ID,typeIn + "_from_" + typeOut);
-}
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 
