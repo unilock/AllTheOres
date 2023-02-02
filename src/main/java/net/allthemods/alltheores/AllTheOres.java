@@ -1,7 +1,6 @@
 package net.allthemods.alltheores;
 
 import net.allthemods.alltheores.blocks.BlockList;
-import net.allthemods.alltheores.events.BlockBreak;
 import net.allthemods.alltheores.infos.Configuration;
 import net.allthemods.alltheores.infos.Reference;
 import net.allthemods.alltheores.meka.resources.ATOSlurries;
@@ -34,7 +33,6 @@ public class AllTheOres {
 		MinecraftForge.EVENT_BUS.register(this);
 		modEventBus.register(Configuration.class);
 		MinecraftForge.EVENT_BUS.addListener(EventWorldgen::biomeLoadingEvent);
-		MinecraftForge.EVENT_BUS.addListener(BlockBreak::BreakEvent);
 
 		setupLogFilter();
 	}

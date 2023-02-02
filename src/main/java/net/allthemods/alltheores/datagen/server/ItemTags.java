@@ -546,35 +546,8 @@ public class ItemTags extends ItemTagsProvider {
         tag(ItemTagRegistry.URANIUM_ORE_ITEM).add(BlockList.URANIUM_END_ORE_ITEM.get());
         tag(ItemTagRegistry.ZINC_ORE_ITEM).add(BlockList.ZINC_END_ORE_ITEM.get());
 
-        tag(ItemTagRegistry.ALUMINUM_ORE_ITEM).add(BlockList.OTHER_ALUMINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IRIDIUM_ORE_ITEM).add(BlockList.OTHER_IRIDIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.LEAD_ORE_ITEM).add(BlockList.OTHER_LEAD_ORE_ITEM.get());
-        tag(ItemTagRegistry.OSMIUM_ORE_ITEM).add(BlockList.OTHER_OSMIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.NICKEL_ORE_ITEM).add(BlockList.OTHER_NICKEL_ORE_ITEM.get());
-        tag(ItemTagRegistry.PLATINUM_ORE_ITEM).add(BlockList.OTHER_PLATINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.SILVER_ORE_ITEM).add(BlockList.OTHER_SILVER_ORE_ITEM.get());
-        tag(ItemTagRegistry.TIN_ORE_ITEM).add(BlockList.OTHER_TIN_ORE_ITEM.get());
-        tag(ItemTagRegistry.URANIUM_ORE_ITEM).add(BlockList.OTHER_URANIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ZINC_ORE_ITEM).add(BlockList.OTHER_ZINC_ORE_ITEM.get());
 
-        tag(ItemTagRegistry.COAL_ORE_ITEM).add(BlockList.OTHER_COAL_ORE_ITEM.get());
-        tag(ItemTagRegistry.COPPER_ORE_ITEM).add(BlockList.OTHER_COPPER_ORE_ITEM.get());
-        tag(ItemTagRegistry.DIAMOND_ORE_ITEM).add(BlockList.OTHER_DIAMOND_ORE_ITEM.get());
-        tag(ItemTagRegistry.EMERALD_ORE_ITEM).add(BlockList.OTHER_EMERALD_ORE_ITEM.get());
-        tag(ItemTagRegistry.GOLD_ORE_ITEM).add(BlockList.OTHER_GOLD_ORE_ITEM.get());
-        tag(ItemTagRegistry.IRON_ORE_ITEM).add(BlockList.OTHER_IRON_ORE_ITEM.get());
-        tag(ItemTagRegistry.LAPIS_ORE_ITEM).add(BlockList.OTHER_LAPIS_ORE_ITEM.get());
-        tag(ItemTagRegistry.QUARTZ_ORE_ITEM).add(BlockList.OTHER_QUARTZ_ORE_ITEM.get());
-        tag(ItemTagRegistry.REDSTONE_ORE_ITEM).add(BlockList.OTHER_REDSTONE_ORE_ITEM.get());
 
-        tag(net.minecraft.tags.ItemTags.COAL_ORES).add(BlockList.OTHER_COAL_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.COPPER_ORES).add(BlockList.OTHER_COPPER_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.DIAMOND_ORES).add(BlockList.OTHER_DIAMOND_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.EMERALD_ORES).add(BlockList.OTHER_EMERALD_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.GOLD_ORES).add(BlockList.OTHER_GOLD_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.IRON_ORES).add(BlockList.OTHER_IRON_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.LAPIS_ORES).add(BlockList.OTHER_LAPIS_ORE_ITEM.get());
-        tag(net.minecraft.tags.ItemTags.REDSTONE_ORES).add(BlockList.OTHER_REDSTONE_ORE_ITEM.get());
 
         ////
         tag(ItemTagRegistry.ORES).add(BlockList.ALUMINUM_ORE_ITEM.get());
@@ -633,26 +606,7 @@ public class ItemTags extends ItemTagsProvider {
         tag(ItemTagRegistry.ORES).add(BlockList.ZINC_END_ORE_ITEM.get());
 
 
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_ALUMINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_IRIDIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_LEAD_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_OSMIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_NICKEL_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_PLATINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_SILVER_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_TIN_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_URANIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_ZINC_ORE_ITEM.get());
 
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_COAL_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_COPPER_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_DIAMOND_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_EMERALD_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_GOLD_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_IRON_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_LAPIS_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_QUARTZ_ORE_ITEM.get());
-        tag(ItemTagRegistry.ORES).add(BlockList.OTHER_REDSTONE_ORE_ITEM.get());
 
 
 
@@ -711,26 +665,7 @@ public class ItemTags extends ItemTagsProvider {
         tag(ItemTagRegistry.IN_END_STONE_ITEM).add(BlockList.ZINC_END_ORE_ITEM.get());
 
 
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_ALUMINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_IRIDIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_LEAD_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_OSMIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_NICKEL_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_PLATINUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_SILVER_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_TIN_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_URANIUM_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_ZINC_ORE_ITEM.get());
 
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_COAL_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_COPPER_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_DIAMOND_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_EMERALD_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_GOLD_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_IRON_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_LAPIS_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_QUARTZ_ORE_ITEM.get());
-        tag(ItemTagRegistry.IN_ANCIENT_STONE_ITEM).add(BlockList.OTHER_REDSTONE_ORE_ITEM.get());
 
         ////
 

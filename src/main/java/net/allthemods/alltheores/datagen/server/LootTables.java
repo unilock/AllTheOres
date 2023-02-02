@@ -5,7 +5,6 @@ import com.mojang.datafixers.util.Pair;
 import net.allthemods.alltheores.blocks.AOreBlock;
 import net.allthemods.alltheores.blocks.BOreBlock;
 import net.allthemods.alltheores.blocks.BlockList;
-import net.allthemods.alltheores.blocks.OtherOreBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
@@ -48,7 +47,7 @@ public class LootTables extends LootTableProvider {
         }
 
         private void dropRaw(Block block) {
-            if((block instanceof AOreBlock) || (block instanceof BOreBlock) || (block instanceof OtherOreBlock)) {
+            if((block instanceof AOreBlock) || (block instanceof BOreBlock)) {
                 String oretype = block.getName().toString();
                 if(oretype.contains("aluminum")) { this.add(block, (block1) -> {
                     return createOreDrop(block1, BlockList.ALUMINUM_RAW.get());
